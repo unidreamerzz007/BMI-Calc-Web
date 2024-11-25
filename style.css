@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Cinzel:wght@400..900&family=Creepster&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
+body{
+  min-height: 100vh;
+  background: url('./content/WallpaperDog-5556675\ \(1\).jpg');
+  background-size: cover;
+  font-family: 'Nunito',sans-serif;
+}
+
+.container
+{
+  position:absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.box{
+  min-width: 400px;
+  background: black;
+  border-radius: 38px;
+  text-align: center;
+  position: relative;
+}
+
+.box ::before
+{
+  content: '';
+  position: absolute;
+  height: 110%;
+  width:110%;
+  left: -5%;
+  top: -5%;
+  background-color: rgba(1, 1, 1, .02);
+  box-shadow: 0px 0px 166px -31px rgba(255, 255n,255, .15);
+  border-radius: 60px;
+  z-index: -1;
+
+
+}
+
+input{
+  color:rgb(31, 81, 255) ;
+  font-weight: 700;
+
+}
+
+h1{
+  font-weight: bold;
+  font-size: 36px;
+  padding: 30px 0 ;
+}
+
+.content
+{
+  padding: 0 40px;
+}
+
+.input
+{
+  background: black;
+  box-shadow: 0px 0px 166px -31px rgba(255, 255n,255, .15);
+  border-radius: 28px;
+  padding: 20px 0;
+  margin-bottom: 20px;
+}
+
+.input label{
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.input input{
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #4f7df9;
+  width:60% ;
+  text-align: center;
+  font-size: 28px;
+  font-family: 'Nunito',sans-serif;
+}
+
+button#calculate
+{
+  font-family: 'Nunito',sans-serif;
+  color: white;
+  background: rgb(39, 31, 255);
+  text-shadow: 0px 0px 10px rgb(4, 0, 128);
+  -webkit-box-shadow: 0px 0px 10px rgb(38, 0, 128);
+  box-shadow: 0px 0px 10px rgb(41, 0, 128);
+ 
+  font-size: 16px;
+  border-radius: 20px;
+  padding:10px 0;
+  width: 100%;
+  outline: none;
+  border: none;
+}
+
+button#calculate:hover{
+  background: rgb(31, 81, 255);
+  text-shadow: 0px 0px 10px blue;
+  -webkit-box-shadow: 0px 0px 10px blue;
+  box-shadow: 0px 0px 10px blue;
+}
+
+.result{
+  padding: 30px 20px;
+}
+.result p{
+  font-weight: 600;
+  font-size: 22px;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.result #result
+{
+  font-size: 36px;
+  font-weight: 900;
+  color:rgb(31, 81, 255) ;
+  text-shadow: 0px 0px 10px rgb(39, 31, 255);
+  background-color: #120e34;
+  display: inline-block;
+  padding:7px 20px ;
+  border-radius: 55px;
+  margin-bottom: 25px;
+  
+}
+
+#comment
+{
+  color:rgb(255, 169, 31) ;
+  text-shadow: 0px 0px 10px rgb(255, 188, 31);
+  font-weight: 800;
+}
